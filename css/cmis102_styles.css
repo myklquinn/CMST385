@@ -110,5 +110,7 @@ a {
 	"Subheader Subheader Subheader Subheader"
 	"btn-1 btn-2 btn-3 btn-4"
 	"footer footer footer footer";
+	max-height: 500px;
+	max-width: 800px;
 	}
 }
