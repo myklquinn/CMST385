@@ -67,7 +67,7 @@ a {
 }
 
 .projectLinks:hover {
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 .projectLinks:hover rect {
