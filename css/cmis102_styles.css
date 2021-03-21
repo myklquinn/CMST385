@@ -2,21 +2,22 @@
 p {
   color: $white;
   font-size: 12px;
-  
-  @media(min-width: 600px) {
+}
+
+p @media(min-width: 600px) {
     left: 50%;
     position: absolute; 
     transform: translate(-50%, 0);
     top: 90%;
-  }
+}
   
-  @media(max-height: 500px) {
+p @media(max-height: 500px) {
     left: 0;
     position: relative;
     top: 0;
     transform: translate(0, 0);
-  }
 }
+  
 a {
 	background: rgba($white, 0);
 	border-bottom: 1px solid;
@@ -25,10 +26,11 @@ a {
 	padding: .25em;
 	text-decoration: none;
 	
-	&:hover {
-	  background: rgba($white, 1);
-	  color: $red;
-	}
+	
+}
+a:hover {
+	background: rgba($white, 1);
+	color: $red;
 }
 
 .projectLinks {
@@ -66,11 +68,10 @@ a {
 .projectLinks:hover {
   font-weight: 900;
   letter-spacing: 1px;
-  
-  rect {
+}
+.projectLinks:hover rect {
     stroke-width: 5;
     stroke-dasharray: 15, 310;
     stroke-dashoffset: 48;
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
   }
-}
