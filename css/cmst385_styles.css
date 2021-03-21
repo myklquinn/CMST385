@@ -52,6 +52,13 @@ a {
     margin-right: 15px;
 }
 
+.quote {
+	border: 1px solid white;
+    padding: 25px;
+    background-image: "https://www.freevector.com/uploads/vector/preview/23958/DD-Space-Background-77090-Preview.jpg"
+}
+
+
 .projectLinks {
 	padding: 10px;
 	margin: 10px;
