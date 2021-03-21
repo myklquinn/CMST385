@@ -19,26 +19,7 @@ body {
 
 .grid-container span {
     display: flex;
-    margin: 10px;
-}
-
-p {
-  color: rgba(255, 255, 255, 1);
-  font-size: 12px;
-}
-
-p @media(min-width: 600px) {
-    left: 50%;
-    position: absolute; 
-    transform: translate(-50%, 0);
-    top: 90%;
-}
-  
-p @media(max-height: 500px) {
-    left: 0;
-    position: relative;
-    top: 0;
-    transform: translate(0, 0);
+    margin: 10px 10px 0 10px;
 }
   
 a {
@@ -104,4 +85,12 @@ a {
     stroke-dasharray: 15, 310;
     stroke-dashoffset: 48;
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+    
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	width: 100%; 
+	}
 }
