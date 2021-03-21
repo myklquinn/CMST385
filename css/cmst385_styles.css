@@ -53,9 +53,27 @@ a {
 }
 
 .quote {
-	border: 1px solid white;
+    border: 1px solid white;
     padding: 25px;
-    background-image: "https://www.freevector.com/uploads/vector/preview/23958/DD-Space-Background-77090-Preview.jpg"
+    font-weight: 400;
+    letter-spacing: 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+.quote:before {
+    background-image: url(https://www.freevector.com/uploads/vector/preview/23958/DD-Space-Background-77090-Preview.jpg);
+    font-weight: 400;
+    background-position: center;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
 }
 
 
