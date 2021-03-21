@@ -3,6 +3,19 @@ body {
 	display: flex;
 	font-family: 'Montserrat', sans-serif;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . .";
+}
+
+
 p {
   color: rgba(255, 255, 255, 1);
   font-size: 12px;
