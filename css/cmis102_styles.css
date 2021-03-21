@@ -34,10 +34,6 @@ a {
 	grid-column: 1 / 12;
 }
 
-.header {
-    line-height: 80px;
-}
-
 .header img {
 	height: 80px;
 	width: 80px;
