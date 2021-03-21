@@ -33,7 +33,7 @@ body {
 .btn-4 { grid-area: btn-4; }
 .footer { grid-area: footer; }
 
-.grid-container span {
+.grid-container div {
     display: flex;
     margin: 10px 10px 0 10px;
 }
