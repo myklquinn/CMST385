@@ -6,16 +6,28 @@ body {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 0px 0px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	gap: 10px 0px;
+	grid-template-areas:
+	"Header Header Header Header"
+	"Subheader Subheader Subheader Subheader"
+	"btn-1 btn-2 btn-3 btn-4"
+	"footer footer footer footer";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
+.header { grid-area: Header; }
+.subheader { grid-area: Subheader; }
+.btn-1 { grid-area: btn-1; }
+.btn-2 { grid-area: btn-2; }
+.btn-3 { grid-area: btn-3; }
+.btn-4 { grid-area: btn-4; }
+.footer { grid-area: footer; }
 
 .grid-container span {
     display: flex;
@@ -37,6 +49,7 @@ a {
 .header img {
 	height: 80px;
 	width: 80px;
+    margin-right: 15px;
 }
 
 .projectLinks {
@@ -86,7 +99,16 @@ a {
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
     
-    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
-	width: 100%; 
+    .grid-container {
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(auto, 1fr);
+	grid-template-areas:
+	"Header"
+	"Subheader"
+	"btn-1"
+	"btn-2"
+	"btn-3"
+	"btn-4"
+	"footer";
 	}
 }
