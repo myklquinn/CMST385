@@ -1,0 +1,13 @@
+{
+  "identifier" : "5F6C4EDF-4E4C-4BA0-819D-9E969B412B5D",
+  "ignoredFilePatterns" : [
+    ".DS_Store",
+    "Project1\/.DS_Store",
+    "Project2\/.DS_Store",
+    "Project3\/.DS_Store"
+  ],
+  "remotePath" : "cmst385.git",
+  "remoteURL" : "https:\/\/github.com\/myklquinn\/CMST385\/",
+  "server" : "GitHub",
+  "usesPublishing" : true
+}
