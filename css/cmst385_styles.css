@@ -18,6 +18,7 @@ body {
 	background: rgba(0, 0, 0, 1);
 	padding: 50px;
 	top: 0;
+	box-shadow: 0 0 30px 30px rgb(85, 85, 85);
 }
 .grid-container {
 	display: grid;
