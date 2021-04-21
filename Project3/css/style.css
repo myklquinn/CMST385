@@ -1,0 +1,298 @@
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+body {
+	background: rgba(0,0,0,1);
+	color: rgba(255,255,255,1);
+	display: flex;
+	font-family: 'Montserrat', Verdana, Arial, sans-serif;
+}
+h1, h2, h3 {
+	margin: 0;
+	color: #E5FFFE;
+}
+
+.container {
+	position: relative;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 1);
+	padding: 20px 20px 0 20px;
+	top: 0;
+}
+
+.nav-container {
+	display: block;
+	position: absolute;
+	right: 20px;
+	z-index: 2;
+	border-radius: 15px;
+}
+
+.nav-menu {
+    background: none;
+    color: white;
+    list-style: none;
+    width: fit-content;
+    height: 100%;
+    margin: 0;
+    overflow: visible;
+    position: relative;
+    padding: 10px;
+}
+
+.nav-menu li {
+    color: black;
+    padding: 10px;
+    background: white;
+    margin: 3px 0;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.nav-menu img {
+	max-width: 100%
+}
+
+.active, .active a {
+	background: #76c8c1 !important;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: minmax(20px, 60px) minmax(200px, 300px) auto minmax(20px, 40px);
+	grid-gap: 5px 0px;
+	grid-template-areas:
+	"Header"
+	"Subheader"
+	"Desc"
+	"Footer";
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+    max-height: 500px;
+    z-index: 1;
+}
+
+
+.header { grid-area: Header; }
+.subheader { grid-area: Subheader; }
+.btn-1 { grid-area: btn-1; }
+.btn-2 { grid-area: btn-2; }
+.btn-3 { grid-area: btn-3; }
+.btn-4 { grid-area: btn-4; }
+.description { 
+	grid-area: Desc;
+	display: inline-block !important;
+}
+.footer { grid-area: Footer; }
+
+.grid-container div {
+    display: flex;
+    margin: 5px 5px 0 5px;
+}
+.subheader h2 {
+	font-size: 0.8em;
+}
+
+.social_media {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social_media li {
+	padding-bottom: 50px;
+}
+
+/* Icons retrieved from https://www.iconfinder.com/social-media-icons */
+.social_media img {
+	max-width: 50px;
+}
+
+#mainpage {
+	background-image: url("../imgs/taylorswift_background.jpg");
+	background-repeat: no-repeat, repeat;
+	background-position: center top;
+	background-size: cover;
+}
+
+#mainpage h1 {
+	font-family: "Great Vibes", Times, Serif;
+	font-size: 5em;
+	margin: 0;
+}
+
+#mainpage:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0 0 0 / 65%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.albums, .news {
+    list-style: none;
+    display: grid;
+    margin: 0 auto;
+    padding: 0;
+    grid-template-columns: 1fr;
+}
+
+.albums figure {
+	margin: 0;
+}
+
+.albums li:not(ol li), .news li:not(.news_twitter) {
+    padding: 20px 20px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.album_art img {
+	max-width: 350px;
+}
+
+.news {
+	grid-gap: 20px;
+	grid-template-areas:
+        "News1"
+        "News2"
+        "News3"
+        "News4"
+        "Twitter";
+    grid-template-rows: repeat(4, auto) 600px;
+}
+
+.news_twitter {
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+
+[class^="news_article"] {
+	border: 1px solid white;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+[class^="news_article"] h2 {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.news a, .news a:visited, .news a:link {
+    color: white;
+    font-size: 0.8em;
+}
+
+.news li span {
+    text-align: right;
+    min-width: 100%;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.news_twitter { grid-area: Twitter; }
+.news_article1 { grid-area: News1 }
+.news_article2 { grid-area: News2 }
+.news_article3 { grid-area: News3 }
+.news_article4 { grid-area: News4 }
+
+@media only screen and (min-width: 800px) {    
+	.container {
+		padding: 50px 50px 0 50px;
+	}
+	.nav-container {
+		right: 50px;
+	}
+	.nav-menu {
+		display: inline-flex;
+	}
+	.nav-menu li {
+		margin: 0 3px;
+		height: 30px;
+		width: 30px;
+	}
+    .grid-container {
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 10px 0px;
+		grid-template-rows: minmax(20px, 100px) minmax(200px, 400px) auto minmax(20px, 60px);
+		grid-template-areas:
+		"Header Header Header Header"
+		"Subheader Subheader Subheader Subheader"
+		"Desc Desc Desc Desc"
+		"Footer Footer Footer Footer";
+		max-width: 1200px;
+	}
+	.subheader h2 {
+		font-size: 1.3em;
+	}
+	.footer span {
+		font-size: 3em;
+	}
+	.description {
+		padding-top: 0;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.albums {
+	    max-width: 100%;
+	    grid-template-columns: 1fr 1fr;
+	    grid-template-rows: auto;
+	}
+	.news {
+		grid-template-areas: 
+		"News1 Twitter"
+		"News2 Twitter"
+		"News3 Twitter"
+		"News4 Twitter";
+		grid-template-rows: repeat(4, auto);
+	}
+	
+	.news_twitter {
+		padding-bottom: 0;
+	}
+
+
+}
+
+@media only screen and (max-height: 500px) {    
+	.description {
+		padding-top: 0;
+		font-size: 0.8em;
+	}
+}
+
+@media only screen and (max-width: 800px) {    
+    .header h1, #mainpage h1{
+	    margin: 0;
+	    font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 400px) {    
+    .album_art img {
+	    max-width: 80vw !important;
+	    padding: 0 !important;
+    }
+}
