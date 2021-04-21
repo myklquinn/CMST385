@@ -222,6 +222,11 @@ h1, h2, h3 {
 .news_article3 { grid-area: News3 }
 .news_article4 { grid-area: News4 }
 
+.apa_citation {
+	text-indent: -36px; 
+	padding-left: 36px;
+}
+
 @media only screen and (min-width: 800px) {    
 	.container {
 		padding: 50px 50px 0 50px;
