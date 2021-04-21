@@ -147,6 +147,10 @@ h1, h2, h3 {
     z-index: 0;
 }
 
+.description a, .description a:visited, .description a:link {
+    color: white;
+}
+
 .albums, .news {
     list-style: none;
     display: grid;
