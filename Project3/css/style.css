@@ -301,7 +301,7 @@ h1, h2, h3 {
 
 @media only screen and (max-width: 400px) {    
     .album_art img {
-	    max-width: 80vw !important;
-	    padding: 0 !important;
+	    box-sizing: border-box;
+	    width: 100%;
     }
 }
