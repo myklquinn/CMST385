@@ -40,6 +40,16 @@ p {
     letter-spacing: 0.1rem;
 }
 
+.description h2 {
+    letter-spacing: 0.05rem;
+}
+
+.description h3 {
+    background: #E5FFFE;
+    padding: 10px;
+    color: black;
+}
+
 /* End of feedback changes */
 
 .container {
