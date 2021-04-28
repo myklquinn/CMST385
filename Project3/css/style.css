@@ -191,7 +191,7 @@ p {
 	margin: 0;
 }
 
-.albums li:not(ol li), .news li:not([class='news_twitter'])  {
+.album_tracks, .album_art, .news li:not([class='news_twitter'])  {
     padding: 20px 20px;
     max-width: 350px;
     margin: 0 auto;
@@ -226,10 +226,11 @@ p {
 
 [class^="news_article"] h2 {
 	overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	text-align: left;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
 }
 
 .news a, .news a:visited, .news a:link {
