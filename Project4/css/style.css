@@ -27,7 +27,10 @@ main {
 }
 
 nav {
-    background-color: #333;
+	    background-color: #333;
+}
+
+.nav-container {
     position: sticky;
     top: 0;
     height: 3em;
@@ -35,6 +38,8 @@ nav {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     z-index: 999;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .top-menu {
@@ -121,6 +126,8 @@ section {
 .details {
 	display: flex;
 	flex-direction: column;
+	max-width: 1200px;
+    margin: 0 auto;
 }
 
 .details div {
@@ -302,6 +309,10 @@ footer {
 
 
 @media only screen and (min-width: 750px) {  
+	nav img {
+	    margin-left: 1em;
+	    max-width: 6rem;
+	}
 	.details {
 		flex-direction: row;
 	}
