@@ -79,6 +79,17 @@
 			document.getElementById("nav-links").style.minHeight = ""
 		}
 	}
+	
+	navOpen = function( event ) {
+		document.getElementById("nav-links").style.minHeight = "10em"
+	}
+	
+	navClose = function( event ) {
+		document.getElementById("nav-links").style.minHeight = ""
+	}
+	
+	document.getElementById("nav-menu").addEventListener("mouseenter", navOpen , false);
+	document.getElementsByTagName("nav")[0].addEventListener("mouseleave", navClose , false);
 	document.addEventListener("click", navOpenClose,false)
 
 </script>
