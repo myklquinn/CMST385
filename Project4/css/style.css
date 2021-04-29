@@ -194,6 +194,9 @@ section {
     flex-flow: nowrap;
     height: 100%;
     width: 100%;
+    box-shadow: 2px 2px 5px black;
+    -webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: rgb(55, 55, 55);
 }
 .morph-about:before {
 	content: "About";
