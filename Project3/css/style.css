@@ -9,10 +9,48 @@ body {
 	display: flex;
 	font-family: 'Montserrat', Verdana, Arial, sans-serif;
 }
+
 h1, h2, h3 {
 	margin: 0;
 	color: #E5FFFE;
 }
+
+/* Elements added in response to assignment feedback */
+
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+p {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	margin: 0.75em 0;
+}
+
+
+.header h1 {
+	font-family: "Great Vibes", Times, Serif;
+	font-size: 5em;
+	margin: 0;
+}
+
+.description {
+    letter-spacing: 0.1rem;
+}
+
+.description h2 {
+    letter-spacing: 0.05rem;
+}
+
+.description h3, .albums h2 {
+    background: #E5FFFE;
+    padding: 0.5rem;
+    color: black;
+}
+
+/* End of feedback changes */
 
 .container {
 	position: relative;
@@ -163,7 +201,7 @@ h1, h2, h3 {
 	margin: 0;
 }
 
-.albums li:not(ol li), .news li:not(.news_twitter) {
+.album_tracks, .album_art, .news li:not([class='news_twitter'])  {
     padding: 20px 20px;
     max-width: 350px;
     margin: 0 auto;
@@ -198,10 +236,11 @@ h1, h2, h3 {
 
 [class^="news_article"] h2 {
 	overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	text-align: left;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
 }
 
 .news a, .news a:visited, .news a:link {
