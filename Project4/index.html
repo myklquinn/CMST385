@@ -8,36 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
 	<link rel="stylesheet" href="css/style.css">
-	
-	<script type="text/javascript" defer>
-		navOpenClose = function( event ) {
-			if (event.target.id == "nav-links") {
-				tgt = event.target
-				tgtHeight = tgt.style.minHeight
-				
-				if (tgtHeight) {
-					tgtHeight = ""
-				} else {
-					tgtHeight = "10em"
-				}
-			} else if (document.getElementById("nav-links").style.minHeight) {
-				document.getElementById("nav-links").style.minHeight = ""
-			}
-		}
-		
-		navOpen = function( event ) {
-			document.getElementById("nav-links").style.minHeight = "10em"
-		}
-		
-		navClose = function( event ) {
-			document.getElementById("nav-links").style.minHeight = ""
-		}
-		
-		document.getElementById("nav-menu").addEventListener("mouseenter", navOpen , false);
-		document.getElementsByTagName("nav")[0].addEventListener("mouseleave", navClose , false);
-		document.addEventListener("click", navOpenClose,false)
-	
-	</script>
+	<script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -71,7 +42,7 @@
 		</header>
 		<section class="welcomeMsg">
 			<div>
-				<p>Hi, I'm Mykl!</p>
+				<h3>Hi, I'm Mykl!</h3>
 				<p>Let me show you what I can do...</p>
 			</div>
 		</section>
