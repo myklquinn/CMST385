@@ -98,7 +98,7 @@ header > *, .details > * {
 }
 
 header h2 {
-    color: #58b9be;
+    color: #2b9fa5;
 }
 
 header div {
@@ -159,7 +159,6 @@ section {
 	background-position: 0% 50%;
 	border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 	box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
-	animation: morphing 10s ease infinite;
 	overflow: visible;
 	padding: 0 !important;
 }
@@ -199,23 +198,30 @@ section {
 .morph-about:before {
 	content: "About";
 }
+.morph-about {
+	animation: morphing 10s ease infinite;
+}
 .morph-projects:before {
 	content: "Projects";
 }
 .morph-projects {
 	animation-delay: 1.3s;
+	animation: morphing 10.5s ease infinite;
+    animation-direction: alternate-reverse;
 }
 
 .morph-contact:before {
 	content: "Contact";
 }
 .morph-contact {
-	animation-delay: 1.9s;
+	animation-delay: 2.1s;
+	animation: morphing 11s ease infinite;
+	animation-direction: alternate;
 }
 
 
 footer {
-	height: 5em;
+	height: 10em;
 	background: #3a4255;
 	color: white;
 	display: flex;
