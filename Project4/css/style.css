@@ -199,7 +199,7 @@ section {
 .morph-contact:before {
 	content: "Contact";
 }
-.morph-contact: {
+.morph-contact {
 	animation-delay: 1.9s;
 }
 
