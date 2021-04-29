@@ -2,9 +2,84 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>CMST385 - Project 4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CMST385 - Project 4 - Mykl Quinn's Portfolio</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<p>No Content.</p>
+	<main>
+		<nav>
+			<img src="imgs/logo.svg" title="Site Logo" alt="Site Logo">
+			<div id="nav-menu">
+				<svg viewBox="0 0 100 80" width="2em" height="3em">
+					<rect width="100" height="10"></rect>
+					<rect y="30" width="100" height="10"></rect>
+					<rect y="60" width="100" height="10"></rect>
+				</svg>
+			</div>
+			<div class="navLinks" id="nav-links">
+				<a href="#home" title="Home Page">Home</a>
+				<a href="#about" title="About Page">About</a>
+				<a href="#project" title="Projects Page">Projects</a>
+				<a href="#contact" title="Contact Page">Contact</a>
+			</div>
+		</nav>
+		<header>
+			<div class="portrait">
+				<img src="imgs/self-portrait2.svg" title="Self-Portrait of Mykl Quinn">
+			</div>
+			<div>
+				<h1>Mykl Quinn</h1>
+				<h2>avid web developer.</h2>
+				<h2>military veteran.</h2>
+				<h2>occasional foodie.</h2>
+			</div>
+		</header>
+		<section class="welcomeMsg">
+			<div>
+				<p>Hi, I'm Mykl!</p>
+				<p>Let me show you what I can do...</p>
+			</div>
+		</section>
+		<section class="details">
+			<div>
+				<div class="morphing-shape morph-about"><h3>About</h3></div>
+				<p>nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed</p>
+			</div>
+			<div>
+				<div class="morphing-shape morph-projects"><h3>Projects</h3></div>
+				<p>et ultrices neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin</p>
+			</div>
+			<div>
+				<div class="morphing-shape morph-contact"><h3>Contact</h3></div>
+				<p>nam at lectus urna duis convallis convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque</p>
+			</div>
+		</section>
+		<footer>
+			<div>Footer</div>
+		</footer>
+	</main>
 </body>
+<script type="text/javascript">
+	navOpenClose = function( event ) {
+		if (event.target.id == "nav-links") {
+			tgt = event.target
+			tgtHeight = tgt.style.minHeight
+			
+			if (tgtHeight) {
+				tgtHeight = ""
+			} else {
+				tgtHeight = "10em"
+			}
+		} else if (document.getElementById("nav-links").style.minHeight) {
+			document.getElementById("nav-links").style.minHeight = ""
+		}
+	}
+	document.addEventListener("click", navOpenClose,false)
+
+</script>
 </html>
