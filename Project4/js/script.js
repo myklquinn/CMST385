@@ -1,26 +1,29 @@
+var nC = document.querySelector(".nav-container")
+var nL = document.querySelector(".nav-links")
+
 navOpenClose = function( event ) {
-	if (event.target.id == "nav-links") {
-		tgt = event.target
-		tgtHeight = tgt.style.minHeight
-		
-		if (tgtHeight) {
-			tgtHeight = ""
+	console.log(event.target)
+	if (nC.style.maxHeight == "100vh") {
+		nC.style.maxHeight = ""
+		nL.style.maxHeight = ""
+	} else if (event.target.className == "nav-menu") {
+		if (nC.style.maxHeight == "100vh") {
+			nC.style.maxHeight = ""
+			nL.style.maxHeight = ""
 		} else {
-			tgtHeight = "10em"
-		}
-	} else if (document.getElementById("nav-links").style.minHeight) {
-		document.getElementById("nav-links").style.minHeight = ""
-	}
+			nC.style.maxHeight = "100vh"
+			nL.style.maxHeight = "100%"
+		}	}
 }
 
 navOpen = function( event ) {
-	document.getElementById("nav-links").style.minHeight = "10em"
+	nC.style.maxHeight = "100vh"
+	nL.style.maxHeight = "100%"
 }
 
 navClose = function( event ) {
-	document.getElementById("nav-links").style.minHeight = ""
+	nC.style.maxHeight = "100vh"
+	nL.style.maxHeight = "100%"
 }
 
-document.getElementById("nav-menu").addEventListener("mouseenter", navOpen , false);
-document.getElementsByTagName("nav")[0].addEventListener("mouseleave", navClose , false);
-document.addEventListener("click", navOpenClose,false)
+document.querySelector("nav").addEventListener("click", navOpenClose , false);
