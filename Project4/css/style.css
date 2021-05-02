@@ -424,7 +424,7 @@ section {
 }
 
 .card-content::before {
-    background: linear-gradient(0deg, var(--accent-color-1) 0, var(--main-bg-color) 15%,transparent 100%);
+    background: linear-gradient(0deg, var(--accent-color-1) 0, white 15%,transparent 100%);
     content: '';
     position: absolute;
     bottom: 99%;
