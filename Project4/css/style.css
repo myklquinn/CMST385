@@ -278,7 +278,7 @@ section {
 	width: 8em;
 	height: 8em;
 	margin: auto;
-	background-image: linear-gradient(19deg, var(--morph-color-1) 0%, var(--morph-color-2) 99.9%, black 100%);
+	background-image: linear-gradient(19deg, var(--morph-color-1) 0%, hsl(261, 29%, 50%) 100%);
 	background-size: 400% 400%;
 	background-position: 0% 50%;
 	border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
