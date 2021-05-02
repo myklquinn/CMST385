@@ -9,16 +9,10 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/video.js" defer></script>
-	<system.webServer>
-    <staticContent>
-           <mimeMap fileExtension=".m4v" mimeType="video/mp4"/>
-    </staticContent>
-</system.webServer>
-
 </head>
 
 <body>
-	<main class="video-container">
+	<main class="video-container" type="video/mp4">
 		<video controls></video>
 	</main>
 </body>
