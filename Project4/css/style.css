@@ -456,6 +456,7 @@ section {
 .project-card h4{
 	color: var(--text-color-2-300);
 	margin: 0 1em;
+	font-style: italic;
 }
 
 .project-card .desc{
@@ -760,7 +761,7 @@ video {
 	.about-me h3 {
 		max-width: 20%;	
 	}
-	.about-me *:not(ul), .form-container * {
+	.about-me *:not(ol), .form-container * {
 	    display: flex;
 	    min-width: 20%;
 	}
