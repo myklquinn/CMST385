@@ -531,6 +531,11 @@ section {
     width: 100%;
 }
 
+.contact-container a {
+	text-decoration: none;
+	color: var(--accent-color-1);
+}
+
 .submit-btn {
     margin-left: auto;
     width: fit-content !important;
