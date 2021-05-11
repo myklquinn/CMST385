@@ -538,7 +538,7 @@ section {
 
 .submit-btn {
     margin-left: auto;
-    width: fit-content !important;
+    width: max-content !important;
     border: 0.125rem solid;
     border-radius: 0.25em;
     padding: 0.5rem;
