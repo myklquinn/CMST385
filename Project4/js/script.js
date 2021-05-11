@@ -35,6 +35,7 @@ submitForm = function() {
 	mR.style.transition = "transform 150ms linear"
 	mR.style.transform = "scale(1) translateY(-" + moveHdr + "px)";
 	cC.style.transform = "translateY(-100%)";
+	setTimeout((event) => { mR.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}) }, 100);
 }
 
 document.querySelector("nav").addEventListener("click", navOpenClose , false);
